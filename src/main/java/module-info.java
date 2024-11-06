@@ -5,4 +5,6 @@ module es.liernisarraoa.dein_ejercicioo_lsj {
 
     opens es.liernisarraoa.dein_ejercicioo_lsj to javafx.fxml;
     exports es.liernisarraoa.dein_ejercicioo_lsj;
+    exports es.liernisarraoa.dein_ejercicioo_lsj.Componente;
+    opens es.liernisarraoa.dein_ejercicioo_lsj.Componente to javafx.fxml;
 }
