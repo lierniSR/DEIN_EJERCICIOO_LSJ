@@ -6,6 +6,12 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.GridPane;
 
+/**
+ * Controlador del producto
+ *
+ * @author Lierni
+ * @version 1.0
+ */
 public class ProductoComponente extends GridPane {
     @FXML
     public ImageView imagenProducto;
@@ -14,8 +20,16 @@ public class ProductoComponente extends GridPane {
     @FXML
     public Label stockProducto;
 
+    /**
+     * Un constructor vaio para poder acceder a los metodos
+     */
     public ProductoComponente(){}
 
+    /**
+     * Poner un Stock y segun la cantidad cambiar le fondo
+     *
+     * @param cantidad
+     */
     public void setStock(double cantidad) {
         String style;
         if (cantidad > 100) {
@@ -30,10 +44,20 @@ public class ProductoComponente extends GridPane {
         this.getStyleClass().add(style);
     }
 
+    /**
+     * Para poner una imagen
+     *
+     * @param imagen
+     */
     public void setImage(Image imagen) {
         imagenProducto.setImage(imagen);
     }
 
+    /**
+     * Poner un nombre
+     *
+     * @param nombre
+     */
     public void setName(String nombre) {
         nombreProducto.setText(nombre);
     }
